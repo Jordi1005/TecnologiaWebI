@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Tecnologia Web - Portal de Asignaciones | Nombre | UPDS -Cbba.</title>
+    <link rel="stylesheet" href="/TecnologiaWebI/PracticaJavaScript/Funciones.css">
+    <link rel="stylesheet" href="Funciones.css">
+</head>
+<body>
+    <div class="contenedor">
+        <form action="">
+            
+            <p>la fecha actual es:</p>
+            <input id="resultado" type="text" readonly>
+            <input type="button" class="btn" onclick="Fecha()" value="Mostrar">
+        </form>
+    </div>
+        <script>
+            function Fecha()
+            {
+                const meses = [
+                "Enero",
+                "Febrero",
+                "Marzo",
+                "Abril",
+                "Mayo",
+                "Junio",
+                "Julio",
+                "Agosto",
+                "Septiembre",
+                "Octubre",
+                "Noviembre",
+                "Diciembre",
+                ];
+                const dias = [
+                "Domingo",
+                "Lunes",
+                "Martes",
+                "Miercoles",
+                "Jueves",
+                "Viernes",
+                "Sabado"                
+                ];
+
+
+                
+                var fecha = new Date();
+                document.getElementById('resultado').value=(dias[fecha.getDay()]+", " +fecha.getDate() + " de " + meses[fecha.getMonth()] + " del " + fecha.getFullYear());
+               
+            }
+        </script>
+    
+</body>
+</html>

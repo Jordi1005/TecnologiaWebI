@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Tecnologia Web - Portal de Asignaciones | Nombre | UPDS -Cbba.</title>
+    <link rel="stylesheet" href="/TecnologiaWebI/PracticaJavaScript/Funciones.css">
+    <link rel="stylesheet" href="Funciones.css">
+</head>
+<body>
+    <div class="contenedor">
+        <form action="">
+            <p>Ingrese la Temperatura:</p>
+            <input id="numero1" type="text">
+            <p>El Clima esta:</p>
+            <input id="resultado" type="text" readonly>
+            <input type="button" class="btn" onclick="Temperatura()" value="Resultado">
+        </form>
+    </div>
+        <script>
+            function Temperatura(numero1,numero2)
+            {
+                var num1 =parseFloat(document.getElementById('numero1').value);
+                var clima="";
+                if (num1>40)
+                    clima="Peligro de Insolacion";
+                else if (num1>=26)
+                    clima="Calor";
+                else if (num1>=16)
+                    clima="Templado";
+                else if (num1>=-10)
+                    clima="Frio";
+                else
+                    clima="Peligro de Congelacion";
+
+                
+
+                document.getElementById('resultado').value=clima;
+
+            }
+        </script>
+    
+</body>
+</html>

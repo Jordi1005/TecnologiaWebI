@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Tecnologia Web - Portal de Asignaciones | Nombre | UPDS -Cbba.</title>
+    <link rel="stylesheet" href="/TecnologiaWebI/PracticaJavaScript/Funciones.css">
+    <link rel="stylesheet" href="Funciones.css">
+</head>
+<body>
+    <div class="contenedor">
+        <form action="">
+            <p>PRODUCTO DE TRES NUMEROS</p>
+            <p>Ingrese el primer numero</p>
+            <input id="numero1" type="text">
+            <p>Ingrese el segundo numero</p>
+            <input id="numero2" type="text">
+            <p>Ingrese el tercer numero</p>
+            <input id="numero3" type="text">
+            <p>El resultado del producto es :</p>
+            <input id="resultado" type="text" readonly>
+            <input type="button" class="btn" onclick="Producto()" value="Resultado">
+        </form>
+    </div>
+        <script>
+            function Producto()
+            {
+                var num1 =parseFloat(document.getElementById('numero1').value);
+                var num2 =parseFloat(document.getElementById('numero2').value);
+                var num3 =parseFloat(document.getElementById('numero3').value);
+                
+                
+                var res1 =num1*num2*num3;
+                document.getElementById('resultado').value=res1;
+
+            }
+        </script>
+    
+</body>
+</html>

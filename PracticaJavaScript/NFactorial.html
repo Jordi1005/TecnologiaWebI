@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Tecnologia Web - Portal de Asignaciones | Nombre | UPDS -Cbba.</title>
+    <link rel="stylesheet" href="/TecnologiaWebI/PracticaJavaScript/Funciones.css">
+    <link rel="stylesheet" href="Funciones.css">
+</head>
+<body>
+    <div class="contenedor">
+        <form action="">
+            <p>Ingrese el Numero a calcular:</p>
+            <input id="numero1" type="text">
+            <p>El factorial es:</p>
+            <input id="resultado" type="text" readonly>
+            <input type="button" class="btn" onclick="Potencia()" value="Resultado">
+        </form>
+    </div>
+        <script>
+            function Potencia(numero1,numero2)
+            {
+                var num1 =parseFloat(document.getElementById('numero1').value);
+                var factorial=1;
+                while ( num1>0) 
+                {
+                factorial=factorial*num1;
+                num1=num1-1;
+                }
+
+                document.getElementById('resultado').value=factorial;
+
+            }
+        </script>
+    
+</body>
+</html>

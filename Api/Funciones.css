@@ -1,0 +1,48 @@
+
+
+body {
+    font-family: Arial, Sans-serif;
+    background: url(/Api/Background.jpg);
+    color: #7a5447;
+    
+}
+.noche
+{
+    background: url(/Api/BackgroundNoche.jpg);
+}
+
+.contenedor {
+    width: 90%;
+      
+    background: #fdf9f900;
+    padding: 20px;
+}
+
+form p {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+#Value1
+{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+form .btn {
+    width: 100%;
+    background: #fafafa;
+    color: #fff;
+    border:none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+

@@ -4,7 +4,7 @@
 //url: http://api.openweathermap.org/data/2.5/weather?id=3919966&units=metric&appid=0d2960cbffecf643d0fcfff22d3e2abf
 
 const requestURL ="http://api.openweathermap.org/data/2.5/weather?id=3919966&units=metric&appid=0d2960cbffecf643d0fcfff22d3e2abf";
-const request = new XMLHttpRequest();
+const request = new  XMLHttpRequest();
 request.open('GET', requestURL);
 
 request.responseType = 'json';

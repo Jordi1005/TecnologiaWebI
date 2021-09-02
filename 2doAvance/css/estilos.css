@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana; 
+}
+.main img{
+
+    max-width: 80%;
+}
+.logo{
+    position: relative;
+    width: 135px;
+    height: 60px;
+}
+.contenedor{
+    width: 100%;
+	margin: auto;
+ 
+}
+
+/*  estilos del header  */
+.header {
+   
+  height: 70px;
+    background: rgba(5,5, 5,0.09);
+    z-index: 101;
+}
+.header .contenedor {
+    position: fixed;
+  display: flex;
+  justify-content: space-between;
+}
+.logo, .icon-menu {
+  margin: 5px;
+  color: #fff;
+}
+.icon-menu {
+  display: block;
+  width: 60px;
+  height: 60px;  
+  background: #b0bcc27e;
+  padding-top: 0x;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 5px;
+  margin-left: auto;
+  cursor: pointer;
+  content: url(img/menu.png);
+}
+.nav {
+  position: absolute;
+  top: 70px;
+  left: -100%;
+  width: auto;
+  transition: all 0.8s;
+   	z-index: 100;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+    height: 80px; 
+}
+.menu__link {
+  display: block;
+  padding: 15px; 
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(0, 102, 255); 
+     height: 50px;
+	border-bottom: 1px solid #999;
+    cursor: pointer;
+}
+.menu__link:hover {
+  background: rgb(95, 94, 94);
+  color: #000;  
+  transition: all 0.5s;
+
+}
+.muestrate{
+ left: 0;
+}
+
+
+
+/*  estilos de la imagen principal  */
+.banner img{
+    width: 100%;
+   
+}
+.banner {
+   position: relative;
+   margin-top: -80px;
+		z-index: -1;
+}
+.banner .contenedor{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-180%);
+    width: 100%;
+    color: rgb(10, 10, 10);
+    text-align: center;
+		
+}
+.contenedor .banner__titulo{
+    font-size: 44px;
+    margin-top: -250px;
+}
+
+.main
+{
+    z-index: -1;
+}
+/*  estilos de marcas  */
+ .infoMarcas{
+    background: #073E59;
+    color: #fff;
+    text-align: center;
+     margin-top: 0px; 
+  
+    
+}
+ .info__img{
+     
+    border-radius: 50%;
+    border: 7px solid #444; 
+    
+    
+}
+
+
+/*  estilos de los nuevos modelos  */
+.nuevos{
+    background: 8EBDD4; 
+    color: #fff;  
+    text-align: center;
+    padding: 15px;
+}
+.nuevos h3{
+    font-size: 30px;
+}
+.nuevos .nuevos__titulo{
+    font-size: 40px;
+}
+.nuevos .nuevos__txt{
+    text-align: justify;
+    padding: 15px;
+}
+.nuevos__img{
+    border-radius: 50%;
+    border: 7px solid rgb(4, 49, 92); 
+}
+.nuevos__img:hover{
+    transform: scale(1.4);
+    border-radius: 20%;
+    border: 7px solid rgb(241, 241, 241); 
+    transition: all 0.5s;
+}
+/*  estilos de pie de pagina*/
+.footer{
+    background: #B0BCC2;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.footer img{
+    width: 50px;
+  
+    margin-right: 10px;
+
+}
+/*  estilos responsivos  */
+@media(min-width:480px){
+    .main img{
+    max-width: 90%;
+}
+    
+    .contenedor .banner__txt{
+        font-size: 25px;   
+    }
+	
+     .infoMarcas .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+		 
+    }
+    
+    .nuevos .contenedor{  
+     display: flex; 
+     flex-wrap: wrap;
+     justify-content:space-around;
+}
+    .nuevos__columna{
+        width:  40%;
+    }
+    .nuevos h3{
+        font-size: 30px;
+    }
+}
+
+@media(min-width:768px){
+      .nuevos__columna{
+        width: 24%; 
+    } 
+    .banner img{
+        width: 100%;
+        content: url(img/banner.jpg);
+       
+    }
+    .info__columna{
+        width: 30%; 
+    } 
+}
+
+@media(min-width:1024px){
+    
+	.nav {
+    position: static;
+    width: auto;
+  }
+  .menu {
+    display: flex;
+  }
+  .icon-menu {
+    display: none;
+  }
+  
+	.menu__link{
+		border: none;
+        height: 70px;
+        font-size: 30px;
+        
+	}
+    .banner .contenedor .banner__titulo{
+        font-size: 50px; 
+        margin-top: -250px; 
+        margin-left: -800px;
+    }
+     .banner .contenedor .banner__txt{
+        font-size: 36px; 
+        margin-left: -800px;
+    }
+    .contenedor{
+        width:1000px;
+    }
+   
+}
+@media(min-width:1280px){
+    .contenedor{
+        width: 1200px;
+    }
+     .banner .contenedor .banner__titulo{
+        font-size: 90px; 
+		
+    }
+     .banner .contenedor .banner__txt{
+        font-size: 46px; 
+    }
+	
+	
+}
+
+  
+ 

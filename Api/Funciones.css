@@ -2,13 +2,13 @@
 
 body {
     font-family: Arial, Sans-serif;
-    background: url(/Api/Background.jpg);
+    background: url(Background.jpg);
     color: #7a5447;
     
 }
 .noche
 {
-    background: url(/Api/BackgroundNoche.jpg);
+    background: url(BackgroundNoche.jpg);
 }
 
 .contenedor {
